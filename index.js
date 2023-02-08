@@ -106,9 +106,11 @@ Use the addReview function below to do the following:
 */
 
 
+
 function addReview(reviews, name, rating, feedback){
-  reviews.push(name, rating, feedback);
-  return{name, rating, feedback};
+  const newReview = {name, rating, feedback}
+reviews.push(newReview);
+  return(reviews);
 }
 console.log(addReview(reviews, 'Billy', 2, 'Lame food!'));
 console.log(reviews);
@@ -165,9 +167,10 @@ Use the getReviewsByRating function below to do the following:
   ]
 */
 
- function getReviewByRating(/* code here */) {
-    /* code here */
-  }
+//  function getReviewByRating(reviews, rating) {
+//     return(math.floor(math.random)* rating)
+//   }
+//   console.log(getReviewByRating(4));
 
   
 /* 💪💪💪💪💪💪💪💪💪💪 STRETCH 2: 💪💪💪💪💪💪💪💪💪💪   
